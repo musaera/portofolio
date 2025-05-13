@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div id="loading-screen">
+      <div id="loading-text">WELCOME</div>
+    </div>
+
+    <nav class="fade-slide-up" id="navbar">
+      <div class="navbar">
+        <div class="logo"><a href="#">MUSAERA</a></div>
+        <ul class="menu">
+          <li><a href="#Home">Home</a></li>
+          <li><a href="#About">About</a></li>
+          <li><a href="#Project">Project</a></li>
+          <li><a href="#Contact">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </nav>
+
+    <section id="Home">
+      <div class="home-content fade-slide-up" id="homeContent">
+        <h1>Hi, I'm M.Saeful.R</h1>
+        <p class="subtitle">Junior Web Development & Interested in DevOps</p>
+        <p class="description">I am learning and will continue to learn.</p>
+        <div class="home-buttons">
+          <a href="#About" class="btn">Learn More About Me</a>
+          <a href="#Contact" class="btn secondary">Contact Me</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="About">About Section</section>
+    <section id="Project">Project Section</section>
+    <section id="Contact">Contact Section</section>
+
+    <div class="button">
+      <a href="#Home"><i class="fas fa-arrow-up"></i></a>
+    </div>
+
+    <script>
+      const hamburger = document.querySelector(".hamburger");
+      const menu = document.querySelector(".menu");
+
+      hamburger.addEventListener("click", () => {
+        menu.classList.toggle("active");
+        hamburger.innerHTML = menu.classList.contains("active")
+          ? '<i class="fas fa-times"></i>'
+          : '<i class="fas fa-bars"></i>';
+      });
+
+      document.body.classList.add("loading");
+
+      setTimeout(() => {
+        document.getElementById("loading-text").innerText = "3";
+      }, 1000);
+      setTimeout(() => {
+        document.getElementById("loading-text").innerText = "2";
+      }, 2000);
+      setTimeout(() => {
+        document.getElementById("loading-text").innerText = "1";
+      }, 3000);
+
+      setTimeout(() => {
+        document.getElementById("loading-screen").style.opacity = "0";
+        setTimeout(() => {
+          document.getElementById("loading-screen").style.display = "none";
+          document.body.classList.remove("loading");
+
+          document.getElementById("navbar").classList.add("show");
+          document.getElementById("homeContent").classList.add("show");
+        }, 500);
+      }, 3000);
+    </script>
+  </body>
+</html>
