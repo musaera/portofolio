@@ -1,88 +1,332 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portofolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-    />
-  </head>
-  <body>
-    <div id="loading-screen">
-      <div id="loading-text">WELCOME</div>
-    </div>
 
-    <nav class="fade-slide-up" id="navbar">
-      <div class="navbar">
-        <div class="logo"><a href="#">MUSAERA</a></div>
-        <ul class="menu">
-          <li><a href="#Home">Home</a></li>
-          <li><a href="#About">About</a></li>
-          <li><a href="#Project">Project</a></li>
-          <li><a href="#Contact">Contact</a></li>
-        </ul>
-        <div class="hamburger">
-          <i class="fas fa-bars"></i>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portofolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+  <div id="loading-screen">
+    <div id="loading-text">WELCOME</div>
+  </div>
+
+  <nav class="fade-slide-up" id="navbar">
+    <div class="navbar">
+      <div class="logo"><a href="#">MUSAERA</a></div>
+      <ul class="menu">
+        <li><a href="#Home">Home</a></li>
+        <li><a href="#About">About</a></li>
+        <li><a href="#Project">Project</a></li>
+        <li><a href="#Contact">Contact</a></li>
+      </ul>
+      <div class="hamburger">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+
+  <section id="Home">
+    <div class="home-content fade-slide-up" id="homeContent">
+      <h1>Hi, I'm M.Saeful.R</h1>
+      <p class="subtitle">Junior Web Development & Interested in DevOps</p>
+      <p class="description">I am learning and will continue to learn.</p>
+
+      <!-- Social Media Icons -->
+      <div class="social-icons" data-aos="fade-up" data-aos-delay="300">
+        <a href="https://github.com/musaera" target="_blank" class="social-icon">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/muhammad-saeful-ramadhan-99992a2b4/" target="_blank" class="social-icon">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://www.instagram.com/sfa_farm/" target="_blank" class="social-icon">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </div>
+
+      <div class="home-buttons">
+        <a href="#About" class="btn">Learn More About Me</a>
+        <a href="#Contact" class="btn secondary">Contact Me</a>
+      </div>
+
+      <!-- Download CV Button -->
+      <div class="cv-button" data-aos="fade-up" data-aos-delay="500">
+        <a href="cv.pdf" download class="btn download-btn">
+          <i class="fas fa-download"></i> Download CV
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="About">
+    <div class="about-container" data-aos="fade-up">
+      <div class="about-image" data-aos="fade-right" data-aos-delay="200">
+        <img src="images/foto.JPG" alt="Profile Photo" class="profile-photo">
+      </div>  
+      <div class="about-content" data-aos="fade-left" data-aos-delay="300">
+        <h2>About Me</h2>
+        <p>Hi! I’m Muhammad Saeful Ramadhan, a passionate Junior Web Developer with a strong interest in DevOps. I enjoy
+          creating responsive and user-friendly websites while continuing to learn new technologies and methodologies to
+          improve my skills.</p>
+        <p>My journey in web development started with a curiosity about how websites work, and has evolved into a
+          passion for creating functional and aesthetic digital experiences.</p>
+
+        <div class="skills-container">
+          <h3>My Skills</h3>
+          <div class="skills">
+            <div class="skill-item" data-aos="zoom-in" data-aos-delay="100">
+              <i class="fab fa-html5"></i>
+              <span>HTML</span>
+            </div>
+            <div class="skill-item" data-aos="zoom-in" data-aos-delay="200">
+              <i class="fab fa-css3-alt"></i>
+              <span>CSS</span>
+            </div>
+            <div class="skill-item" data-aos="zoom-in" data-aos-delay="300">
+              <i class="fab fa-js"></i>
+              <span>JavaScript</span>
+            </div>
+            <div class="skill-item" data-aos="zoom-in" data-aos-delay="400">
+              <i class="fab fa-git-alt"></i>
+              <span>Git</span>
+            </div>
+            <div class="skill-item" data-aos="zoom-in" data-aos-delay="500">
+              <i class="fas fa-server"></i>
+              <span>DevOps</span>
+            </div>
+          </div>
         </div>
       </div>
-    </nav>
+    </div>
+  </section>
 
-    <section id="Home">
-      <div class="home-content fade-slide-up" id="homeContent">
-        <h1>Hi, I'm M.Saeful.R</h1>
-        <p class="subtitle">Junior Web Development & Interested in DevOps</p>
-        <p class="description">I am learning and will continue to learn.</p>
-        <div class="home-buttons">
-          <a href="#About" class="btn">Learn More About Me</a>
-          <a href="#Contact" class="btn secondary">Contact Me</a>
+  <section id="Project">
+    <div class="project-container">
+      <h2 data-aos="fade-down">My Projects</h2>
+      <div class="project-grid">
+        <!-- Project 1 -->
+        <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="project-img">
+            <img style="height: auto;" src="images/sismako.png" alt="Project 1">
+          </div>
+          <div class="project-info">
+            <h3>SISMAKO</h3>
+            <p>Bertanggung jawab pada fitur administrasi: manajemen akun, data guru, dan struktur kelas.</p>
+            <p style="color: rgb(198, 225, 255);">#Team Project</p>
+            <div class="project-links">
+              <a href="https://github.com/yourusername/project1" target="_blank" class="project-btn">
+                <i class="fab fa-github"></i> GitHub
+              </a>
+              <a href="https://sismako.smktibazma.sch.id/" target="_blank" class="project-btn">
+                <i class="fas fa-external-link-alt"></i> Live Demo
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="project-img">
+            <img style="height: auto;" src="images/desa-astana.png" alt="Project 2">
+          </div>
+          <div class="project-info">
+            <h3>Tamplate Desa Wisata</h3>
+            <p>Sebuah situs web yang menampilkan informasi terkait desa dan juga memberikan informasi tentang
+              karakteristik desa.</p>
+            <p style="color: rgb(198, 225, 255);">#Personal Project</p>
+            <div class="project-links">
+              <a href="https://github.com/musaera/astana" target="_blank" class="project-btn">
+                <i class="fab fa-github"></i> GitHub
+              </a>
+              <a href="https://astana-nine.vercel.app/" target="_blank" class="project-btn">
+                <i class="fas fa-external-link-alt"></i> Live Demo
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card" data-aos="fade-up" data-aos-delay="400">
+          <div class="project-img">
+            <img style="height: auto;" src="images/portofolio.png" alt="Project 3">
+          </div>
+          <div class="project-info">
+            <h3>Portfolio Website</h3>
+            <p>Situs web portofolio pribadi yang memamerkan proyek dan keterampilan saya. Dibuat dengan HTML, CSS, dan
+              JavaScript dengan animasi yang halus.</p>
+            <div class="project-links">
+              <a href="https://github.com/yourusername/portfolio" target="_blank" class="project-btn">
+                <i class="fab fa-github"></i> GitHub
+              </a>
+              <a href="#" class="project-btn">
+                <i class="fas fa-external-link-alt"></i> Live Demo
+              </a>
+            </div>
+          </div>
         </div>
       </div>
-    </section>
-
-    <section id="About">About Section</section>
-    <section id="Project">Project Section</section>
-    <section id="Contact">Contact Section</section>
-
-    <div class="button">
-      <a href="#Home"><i class="fas fa-arrow-up"></i></a>
     </div>
+  </section>
 
-    <script>
-      const hamburger = document.querySelector(".hamburger");
-      const menu = document.querySelector(".menu");
+  <section id="Contact">
+    <div class="contact-container" data-aos="fade-up">
+      <h2>Get In Touch</h2>
+      <div class="contact-content">
+        <div class="contact-form" data-aos="fade-right" data-aos-delay="200">
+          <form id="contactForm">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="Your Email" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">
+              <i class="fas fa-paper-plane"></i> Send Message
+            </button>
+          </form>
+        </div>
 
-      hamburger.addEventListener("click", () => {
-        menu.classList.toggle("active");
-        hamburger.innerHTML = menu.classList.contains("active")
-          ? '<i class="fas fa-times"></i>'
-          : '<i class="fas fa-bars"></i>';
+        <div class="contact-info" data-aos="fade-left" data-aos-delay="300">
+          <h3>Contact Information</h3>
+          <p>Feel free to reach out to me through the form or via my social media profiles. I'm always open to
+            discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
+
+          <div class="contact-details">
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <span>saefulromadoni59@smk.belajar.id</span>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-phone"></i>
+              <span>+62 859 7184 8769</span>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Cirebon, Jawa Barat</span>
+            </div>
+          </div>
+
+          <div class="contact-social">
+            <a href="https://github.com/musaera" target="_blank" class="social-icon">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/muhammad-saeful-ramadhan-99992a2b4/" target="_blank"
+              class="social-icon">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="mailto:saefulromadoni59@smk.belajar.id" class="social-icon">
+              <i class="fas fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-logo">MUSAERA</div>
+      <p>© 2025 M.Saeful.R. All Rights Reserved.</p>
+      <div class="footer-social">
+        <a href="https://github.com/musaera" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/muhammad-saeful-ramadhan-99992a2b4/" target="_blank"><i
+            class="fab fa-linkedin"></i></a>
+        <a href="https://www.instagram.com/sfa_farm/" target="_blank"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <div class="button">
+    <a href="#Home"><i class="fas fa-arrow-up"></i></a>
+  </div>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    // Initialize AOS
+    AOS.init({
+      duration: 1500,
+      easing: 'ease-in-out',
+      once: false
+    });
+
+    // Hamburger menu toggle
+    const hamburger = document.querySelector(".hamburger");
+    const menu = document.querySelector(".menu");
+
+    hamburger.addEventListener("click", () => {
+      menu.classList.toggle("active");
+      hamburger.innerHTML = menu.classList.contains("active")
+        ? '<i class="fas fa-times"></i>'
+        : '<i class="fas fa-bars"></i>';
+    });
+
+    // Loading screen
+    document.body.classList.add("loading");
+
+    setTimeout(() => {
+      document.getElementById("loading-text").innerText = "3";
+    }, 1000);
+    setTimeout(() => {
+      document.getElementById("loading-text").innerText = "2";
+    }, 2000);
+    setTimeout(() => {
+      document.getElementById("loading-text").innerText = "1";
+    }, 3000);
+
+    setTimeout(() => {
+      document.getElementById("loading-screen").style.opacity = "0";
+      setTimeout(() => {
+        document.getElementById("loading-screen").style.display = "none";
+        document.body.classList.remove("loading");
+
+        document.getElementById("navbar").classList.add("show");
+        document.getElementById("homeContent").classList.add("show");
+      }, 500);
+    }, 3000);
+
+    // Form submission
+    const contactForm = document.getElementById('contactForm');
+    if (contactForm) {
+      contactForm.addEventListener('submit', function (e) {
+        e.preventDefault();
+        // Here you would typically send the form data to a server
+        // For now, we'll just show an alert
+        alert('Thank you for your message! I will get back to you soon.');
+        contactForm.reset();
       });
+    }
 
-      document.body.classList.add("loading");
+    // Intersection Observer for scroll animations (as a fallback for browsers that don't support AOS)
+    const observerOptions = {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.1
+    };
 
-      setTimeout(() => {
-        document.getElementById("loading-text").innerText = "3";
-      }, 1000);
-      setTimeout(() => {
-        document.getElementById("loading-text").innerText = "2";
-      }, 2000);
-      setTimeout(() => {
-        document.getElementById("loading-text").innerText = "1";
-      }, 3000);
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
 
-      setTimeout(() => {
-        document.getElementById("loading-screen").style.opacity = "0";
-        setTimeout(() => {
-          document.getElementById("loading-screen").style.display = "none";
-          document.body.classList.remove("loading");
+    document.querySelectorAll('section').forEach(section => {
+      observer.observe(section);
+    });
+  </script>
+</body>
 
-          document.getElementById("navbar").classList.add("show");
-          document.getElementById("homeContent").classList.add("show");
-        }, 500);
-      }, 3000);
-    </script>
-  </body>
 </html>
